@@ -1,0 +1,240 @@
+/* Masahiro's Portfolio Website CSS */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin: 1.5em 0 0.5em 0;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+h4 {
+    color: #34495e;
+    font-size: 1.2em;
+    margin: 1em 0 0.5em 0;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+em {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Profile Section */
+.profile-table {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.profile-table td {
+    vertical-align: top;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-info h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+/* Spotify Embed */
+iframe {
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.contact-info li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+/* Navigation */
+.nav-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .profile-table {
+        border-spacing: 10px;
+        padding: 20px;
+    }
+    
+    .profile-table td {
+        display: block;
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    iframe {
+        height: 200px;
+    }
+    
+    .nav-link {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Music Page Specific Styles */
+.music-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.music-content p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Special styling for ordered lists */
+ol[type="i"] li {
+    color: #2c3e50;
+    font-weight: 500;
+}
