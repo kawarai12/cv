@@ -214,10 +214,6 @@ iframe {
     }
 }
 
-body {
-    animation: fadeIn 0.6s ease-in;
-}
-
 /* Music Page Specific Styles */
 .music-content {
     background-color: #fff;
